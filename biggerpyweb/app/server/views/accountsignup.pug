@@ -1,0 +1,30 @@
+
+
+// preset form values if we receive a userdata object //
+- user = typeof(udata) != 'undefined' ? udata : { }
+// store the userId on the client side in a hidden input field //
+input(type='hidden', value= user._id)#userId
+
+form(method="post")#account-form
+	.title-signup
+		|SIGNUP
+	.input-info1
+		input.form-signup-username#user-tf(type='text', name='user', placeholder='Username' ,value= user.user).disabled
+		input.form-signup-password#pass-tf(type='password', name='pass', placeholder='Password', value='')
+	hr
+	.input-info2
+		input.form-signup-name#name-tf(type='text', name='name', placeholder='Name',value= user.name)
+		input.form-signup-email#email-tf(type='text', name='email',placeholder='Email', value= user.email)
+		input.form-signup-playerid#playerid-tf(type='text', name='playerid',placeholder='playerId', value= user.playerid)
+		.form-signup-teacher
+			select#teacher-list(name='teacher')
+				each item in teachers
+					option(selected=item._id == user.teacher, value=item._id)= item.name
+	.form-button
+		button(type='button')#account-form-btn1.btn-default
+		button(type='submit')#account-form-btn2.btn-primary
+	.clearfix
+
+// display form errors in a custom modal window //
+
+include modals/form-errors

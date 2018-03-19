@@ -1,0 +1,80 @@
+.nav
+	.nav-header
+		| Biggerpy Python Editor
+	.nav-info
+		#btn-logout
+			a(href="#" title="Log Out")
+				img(src="/img/退出账号.png")
+		#btn-account
+			a(href="#" title="Control Panel")
+				- user = typeof(udata) != 'undefined' ? udata : { }
+				input(type='hidden', value= user._id)#userId
+				p #{user.name}
+.container-info
+	- user = typeof(udata) != 'undefined' ? udata : { }
+	input(type='hidden', value= user._id)#userId
+	//h2 Signed in as: #{user.name}
+	//-
+		select#selectList(class='selectpicker', onchange='getOption()')
+			option - Select Profile
+			option Student 1
+			option Student 2
+			option Student 3
+			option Student 4
+			option Student 5
+			option Student 6
+			option Student 7
+			option Student 8
+		button#btn-replace.btn.btn-default Replace in Code
+		br
+		p#resulttitle(style='font-size:16px;')
+		p#result(style='font-size:16px; font-family: monospace;')
+	div#lesson
+		select#selectSampleCode(class='selectpicker', onchange='getLesson()')
+			option Template Code
+	div#server
+		select#server-list(class='selectserver', onchange='getserver()' , name="server")
+			option(selected="4711", value="")
+				|Select your server
+			option(value="4711")
+				|Server1
+			option(value="4712")
+				|Server2
+			option(value="4713")
+				|Server3
+			option(value="4714")
+				|Server4
+	div#container-editor
+		div(class='btn_small')
+			button#btn-save
+				|Save
+			button#btn-load
+				|Load
+		br
+		if user.userType != "student"
+			div(class='btn-editor')
+				button#btn-loadTemplate
+					|Template
+				button#btn-loadFinal
+					|Final
+
+		div(class='btn-editor')
+			button#btn-run
+				|Run Script
+			button#btn-stop
+				|Stop Script
+		h2.log-title Python Log
+		div.python-log
+			p#log
+		div(class='btn-editor')
+			button#btn-reset
+				|Reset to Template
+			if user.userType == "student"
+				button#btn-loadHint
+					|Load Hint
+			else
+				button#btn-saveHint
+					|Save Hint
+
+#editor
+#secondEditor

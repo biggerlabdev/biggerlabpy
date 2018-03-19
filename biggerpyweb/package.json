@@ -1,0 +1,29 @@
+{
+  "name": "biggerpyweb",
+  "version": "",
+  "description": "",
+  "author": "Yichen",
+  "website": {
+    "url": ""
+  },
+  "dependencies": {
+    "body-parser": "1.14.1",
+    "connect-mongo": "0.8.2",
+    "cookie-parser": "1.4.0",
+    "emailjs": "^1.0.4",
+    "errorhandler": "1.4.2",
+    "express": "4.13.3",
+    "express-session": "1.11.3",
+    "moment": "2.10.3",
+    "mongodb": "2.2.30",
+    "pug": "^2.0.0-rc.2",
+    "stylus": "0.54.5",
+    "ws": "^3.1.0"
+  },
+  "engines": {
+    "node": "8.1.4"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

@@ -1,0 +1,616 @@
+//通配
+ a {
+	color: #ffffff;
+	text-decoration:none;
+}
+a:hover {
+	color:#ffffff;
+	text-decoration:none; /*CSS下划线效果：无下划线*/
+}
+
+body {
+	padding: 0;
+	height: 100%;
+	background: #f2f9fe;
+	background: -moz-radial-gradient(center, ellipse cover, #f2f9fe 0%, #d6f0fd 100%) /* FF3.6+ */;
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd)) /* Chrome,Safari4+ */;
+	background: -webkit-radial-gradient(center, ellipse cover, #f2f9fe 0%, #d6f0fd 100%) /* Chrome10+,Safari5.1+ */;
+	background: -o-radial-gradient(center, ellipse cover, #f2f9fe 0%, #d6f0fd 100%) /* Opera 12+ */;
+	background: -ms-radial-gradient(center, ellipse cover, #f2f9fe 0%, #d6f0fd 100%) /* IE10+ */;
+	background: radial-gradient(center, ellipse cover, #f2f9fe 0%, #d6f0fd 100%) /* W3C */;
+}
+
+
+#header_bg .loform-controlgo{
+	width: 378px;
+	margin: 0 auto ;
+}
+.well .logo2{
+	width: 217px;
+	margin: 32px auto ;
+}
+
+h2 {
+	margin: 0 0 6px 0;
+	font-weight: bold;
+}
+h6 {
+	margin: 2px 0 20px 0;
+}
+hr {
+	margin: 14px 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #fff;
+}
+ul {
+	margin: 4px 0 0 0;
+}
+label,
+h6 {
+	color: #808080;
+	font-size: 13px;
+	font-weight: normal;
+	text-shadow: -1px 1px 0 #fff;
+}
+.well {
+	background: #f8f8f8;
+	margin-bottom: 0;
+}
+.well .tab-title {
+	float: left;
+	margin-left: 10px;
+}
+.well .button-top-right {
+	float: right;
+	margin: 0 10px 20px 0;
+}
+.navbar-btn {
+	min-width: 100px;
+	margin-right: 8px;
+}
+.navbar-btn .btn {
+	min-width: 100px;
+}
+.glyphicon {
+	margin-right: 8px;
+}
+/*
+	home window
+*/
+.index-biggerpy{
+		/* 加载背景图 */
+		background-image: url(/img/denglu-beijing.png);
+		/* 背景图垂直、水平均居中 */
+		background-position: center center;
+		/* 背景图不平铺 */
+		background-repeat: no-repeat;
+		/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+		background-attachment: fixed;
+		/* 让背景图基于容器大小伸缩 */
+		background-size: cover;
+		/* 设置背景颜色，背景图加载过程中会显示背景色 */
+		background-color: #fffff;
+}
+/*
+	editor window
+*/
+#account-form .input-info2 .form-signup-teacher{
+//用div的样式代替select的样式
+	width: 470px;
+	height: 50px;
+	margin-top:  20px;
+	position: relative;
+	font-family: PingFangSC-Regular;
+	font-size: 20px;
+	color: #BCBCBC;
+}
+#account-form .input-info2 .form-signup-teacher select{
+//清除select的边框样式
+	border: 1px solid #BCBCBC;
+//清除select聚焦时候的边框颜色
+	outline: none;
+//将select的宽高等于div的宽高
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+//隐藏select的下拉图标
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+//通过padding-left的值让文字居中
+	padding-left: 20px;
+//添加下拉箭头
+	background: url(/img/teacher.png) no-repeat right 16px center;
+	padding-right: 50px;
+}
+#lesson{
+//用div的样式代替select的样式
+	width: 240px;
+	margin-left : 30px;
+	font-family: PingFangSC-Medium;
+	font-size: 24px;
+	color: #FFFFFF;
+	background: #323D4E;
+}
+
+#selectSampleCode {
+	width:100%;
+	font-family: PingFangSC-Medium;
+	font-size: 24px;
+	color: #FFFFFF;
+	background: #323D4E;
+}
+
+#selectSampleCode .selectpicker{
+
+}
+#home-ls {
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+}
+#home-ls  .container-info{
+	position: absolute;
+	width: 280px;
+	background: #323D4E;
+	height: 869px;
+}
+
+
+#home-ls  #container-editor{
+	width: 240px;
+	margin-left: 20px;
+	margin-top : 26px;
+}
+#home-ls #server{
+	width: 240px;
+	margin-left: 20px;
+	margin-top : 26px;
+	font-family: PingFangSC-Medium;
+	font-size: 18px;
+	color: #FFFFFF;
+	background: #323D4E;
+}
+#home-ls #server select{
+ //清除select的边框样式
+	 border: 1px solid #4bf;
+	 border-radius: 6px;
+ //清除select聚焦时候的边框颜色
+	 outline: none;
+ //将select的宽高等于div的宽高
+	 width: 100%;
+	 height: 40px;
+	 line-height: 40px;
+ //隐藏select的下拉图标
+	 appearance: none;
+	 -webkit-appearance: none;
+	 -moz-appearance: none;
+ //通过padding-left的值让文字居中
+	 padding-left: 20px;
+ //添加下拉箭头
+	 background: url(/img/teacher.png) no-repeat right 10px center;
+	 padding-right: 40px;
+ }
+#home-ls #server option{
+	background-color : #323d4e;
+	color: #ffffff;
+}
+#home-ls  #container-editor .btn_small {
+	width: 240px;
+}
+#home-ls  #container-editor .btn_small button{
+	 width: 80px;
+	 height: 40px;
+	 border: 1px solid #44BBFF;
+	 border-radius: 6px;
+	 background-color : #323D4E;
+	 font-family: PingFangSC-Medium;
+	 font-size: 20px;
+	 color: #FFFFFF;
+ }
+#home-ls  #container-editor .btn_small #btn-load{
+	float: right;
+}
+#home-ls  #container-editor .btn-editor {
+	width: 240px;
+}
+#home-ls  #container-editor .btn-editor button{
+	width: 240px;
+	height: 40px;
+	margin-top: 15px;
+	border: 1px solid #44BBFF;
+	border-radius: 6px;
+	background-color : #323D4E;
+	font-family: PingFangSC-Medium;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+#home-ls  #container-editor .log-title{
+	font-family: PingFangSC-Medium;
+	font-size: 30px;
+	margin-top: 29px;
+	color: #FFFFFF;
+}
+#home-ls  #container-editor .python-log{
+	width: 240px;
+	height :350px;
+	margin-top: 9px;
+	background-color : #ffffff;
+	border: 1px solid #44BBFF;
+	border-radius: 6px;
+	overflow: scroll;
+}
+#home-ls  #container-editor .python-log p{
+	font-size: 20px;
+}
+/*
+	login window
+*/
+#login{
+
+}
+	//通用header
+ .header_bg {
+	height: 230px;
+	/* 加载背景图 */
+	background-image: url(/img/beijing.png);
+	/* 背景图垂直、水平均居中 */
+	background-position: center center;
+	/* 背景图不平铺 */
+	background-repeat: no-repeat;
+	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	background-size: cover;
+}
+.header_bg .logo{
+	width: 380px;
+	height: 150px;
+	margin: auto;
+}
+.header_bg .logo img{
+	margin-top: 37px;
+}
+
+#form-login {
+	width: 570px;
+	height: 575px
+	margin:48px auto ;
+	border: 1px solid #FFFFFF;
+	background: #FFFFFF;
+}
+#form-login .logo1{
+	margin: 32px auto ;
+	width: 248px;
+	height: 48px;
+	/* 加载背景图 */
+	background-image: url(/img/LOGO-2.png);
+	/* 背景图垂直、水平均居中 */
+	background-position: center center;
+	/* 背景图不平铺 */
+	background-repeat: no-repeat;
+	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	background-size: cover;
+}
+#form-login  input {
+	 width: 470px;
+	 height: 70px;
+	 border: 1px solid #BCBCBC;
+	 padding-left:20px;
+	 font-family: PingFangSC-Regular;
+	 font-size: 20px;
+	 color: #BCBCBC;
+ }
+#form-login  .input-ls {
+	margin-left:50px ;
+}
+#form-login .form-username {
+	 padding-right:54px;
+	 background:url(/img/username1.png) no-repeat scroll right 16px  center transparent;
+	 margin-top:4px ;
+ }
+#form-login .form-password {
+	padding-right:54px;
+	background:url(/img/password.png) no-repeat scroll right 19px  center transparent;
+	margin-top:25px ;
+}
+#form-login .button-rememember-me{
+	margin-top: 17px;
+	float: left;
+}
+#form-login #forgot-password{
+	float: right;
+	margin-top: 17px;
+	margin-right: 50px;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #44BBFF;
+}
+
+#form-login #forgot-password a{
+	color: #44bbff;
+	text-decoration:none;
+}
+#form-login #forgot-password a:hover {
+	font-family: PingFangSC-Regular;
+	color: #44BBFF;
+	text-decoration:none; /*CSS下划线效果：无下划线*/
+}
+#login .controls {
+	margin-left: 48px;
+	width: 474px;
+}
+#login .controls .button-sign-in {
+	margin-top: 48px ;
+	width: 100%;
+	height: 74px;
+	font-size: 40px;
+	color: #ffffff;
+	background-color: #44bbff;
+	border: 1px solid #4bf;
+}
+
+#login .controls .button-create-an-account {
+	margin-top:   21px ;
+	width: 100%;
+	height: 74px;
+	font-size: 40px;
+	background-color: #FFFFFF;
+	color: #44bbff;
+	text-align: center;
+	border: 1px solid #4bf;
+}
+#login .controls a {
+	color: #44bbff;
+	text-decoration:none;
+}
+#login .controls a:hover {
+	color:#44bbff;
+	text-decoration:none; /*CSS下划线效果：无下划线*/
+}
+/*
+	sign-up  window
+*/
+#account-form {
+	width:570px;
+	height:575px;
+	margin:48px auto ;
+	border: 1px solid #FFFFFF;
+	background: #FFFFFF;
+}
+#account-form .title-signup{
+	width: 136px;
+	height: 50px;
+	font-family: PingFangSC-Medium;
+	font-size: 36px;
+	color: #333333;
+	margin-top:14px;
+	margin-left:219px;
+
+}
+#account-form .input-info1 {
+	width: 470px;
+	margin-top: 20px;
+	margin-left:50px;
+}
+#account-form input {
+	width: 470px;
+	height: 50px;
+	border: 1px solid #BCBCBC;
+	padding-left:20px;
+	font-family: PingFangSC-Regular;
+	font-size: 20px;
+	color: #BCBCBC;
+}
+#account-form .input-info1  .form-signup-username{
+	padding-right: 50px;
+	background: url(/img/username.png) no-repeat scroll right 19px  center transparent;
+}
+#account-form .input-info1 .form-signup-password{
+	margin-top:  20px;
+	padding-right: 50px;
+	margin-button: 30px;
+	background: url(/img/password.png) no-repeat scroll right 22px  center transparent;
+}
+
+#account-form .input-info2 {
+	width: 470px;
+	margin-top: 10px;
+	margin-left:50px;
+}
+#account-form .input-info2 .form-signup-name{
+	padding-right: 50px;
+	background: url(/img/name.png) no-repeat scroll right 17px  center transparent;
+}
+#account-form .input-info2 .form-signup-email{
+	margin-top:  15px;
+	padding-right: 50px;
+	background: url(/img/email.png) no-repeat scroll right 16px  center transparent;
+}
+#account-form .input-info2 .form-signup-playerid{
+	margin-top:  15px;
+	padding-right: 50px;
+	background: url(/img/username.png) no-repeat scroll right 19px  center transparent;
+}
+#account-form .input-info2 .form-signup-teacher{
+//用div的样式代替select的样式
+	width: 470px;
+	height: 50px;
+	margin-top:  15px;
+	position: relative;
+	font-family: PingFangSC-Regular;
+	font-size: 20px;
+	color: #BCBCBC;
+}
+#account-form .input-info2 .form-signup-teacher select{
+//清除select的边框样式
+	border: 1px solid #BCBCBC;
+//清除select聚焦时候的边框颜色
+	outline: none;
+//将select的宽高等于div的宽高
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+//隐藏select的下拉图标
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+//通过padding-left的值让文字居中
+	padding-left: 20px;
+//添加下拉箭头
+	background: url(/img/teacher.png) no-repeat right 16px center;
+	padding-right: 50px;
+}
+#account-form .form-button{
+	width : 474px;
+	margin-left: 48px;
+	margin-top: 15px;
+}
+
+#account-form .form-button .btn-default{
+	background-color : #ffffff;
+	border : 1px solid #44bbff;
+	color: #44bbff;
+	width: 224px;
+	height: 64px;
+	float: left;
+	font-size: 38px;
+}
+#account-form .form-button .btn-primary{
+	background-color : #44bbff;
+	border : 1px solid #ffffff;
+	width: 224px
+	height: 64px;
+	float: right;
+	font-size: 38px;
+}
+/*
+	modal windows
+*/
+.modal .modal-dialog {
+	width: 480px;
+}
+.modal .form-group {
+	margin-bottom: 0px;
+}
+.modal .alert {
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding: 8px 15px 8px 15px;
+}
+//.modal .alert-dismissable,
+.modal .close {
+	right: -4px;
+}
+.modal p {
+	margin: 0;
+	padding: 0;
+}
+.modal .modal-footer button {
+	width: 80px;
+}
+.center-vertical {
+	height: 100vh;
+}
+.center-vertical form {
+	top: 35%;
+	margin: auto;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.form-horizontal .form-buttons {
+	float: right;
+}
+.form-horizontal .form-buttons .btn {
+	width: 80px;
+	margin-left: 6px;
+}
+.form-horizontal input,
+.form-horizontal select {
+	height: 30px;
+}
+#editor {
+	position: absolute;
+	float: right;
+	left: 280px;
+	top: 80px;
+	right: 0;
+	height: 660px;
+	font-size: 20px;
+	line-height: 30px;
+}
+#secondEditor {
+	position: absolute;
+	height: 200px;
+	left: 280px;
+	right: 0;
+	top: 749px;
+	background: #A2DEFF;
+	font-size: 20px;
+}
+.control-panel{
+	margin-top:80px;
+}
+/*
+	account windows
+*/
+.nav{
+	height : 80px;
+	background: #44BBFF;
+}
+.nav .nav-header{
+	width: 30%;
+	float: left;
+	margin-top:26px;
+	margin-left : 20px;
+	font-family: PingFangSC-Medium;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.nav .nav-info{
+	height:100%;
+	width: 60%;
+	float: right;
+	margin-right : 52px;
+	font-family: PingFangSC-Medium;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.nav  .header-img {
+	height: 46px;
+	width: 46px;
+}
+.nav  .header-img img{
+	border-radius: 50%;
+	height: 46px;
+	width: 46px;
+}
+.nav .nav-info 	#btn-home{
+	 height:100%;
+	margin-top: 27px;
+	width:180px;
+	float: right;
+	 font-family: PingFangSC-Medium;
+	 font-size: 20px;
+	 color: #FFFFFF;
+	text-align :right;
+ }
+.nav .nav-info  #btn-account{
+	height:100%;
+	margin-top: 27px;
+	width:180px;
+	float: right;
+	text-align :right;
+}
+.nav .nav-info  #btn-account p{
+	font-family: PingFangSC-Medium;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.nav .nav-info 	#btn-logout{
+	margin-top: 27px;
+	width: 25px;
+	height:100%;
+	float: right;
+	margin-left: 41px;
+}

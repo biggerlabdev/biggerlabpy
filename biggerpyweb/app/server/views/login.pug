@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		title Biggerpy
+		meta(name="viewport" content="width=device-width, initial-scale=1" )
+		link(rel='stylesheet', href='/vendor/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css')
+		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css')
+	body(class="index-biggerpy")
+		block content
+		block scripts
+		#login
+			.header_bg
+				.logo
+					img(src="/img/LOGO-1.png")
+			form(id='form-login', method='post')
+				.logo1
+				.input-ls
+					input.form-username(type='text', id='user-tf', name='user' , placeholder="Username")
+					input.form-password(type='password', id='pass-tf', name='pass', placeholder="Password")
+					button(type='button').btn.btn-default.button-rememember-me
+						span.glyphicon.glyphicon-unchecked.button-rememember-me-glyph
+						| Remember Me
+					div#forgot-password
+						a(href='#') Forgot Your Password?
+				.controls
+					button(type='submit').button-sign-in
+						| SIGN IN
+					button.button-create-an-account
+						a(href='/signup')
+							|CREATE AN ACCOUNT
+		include modals/alert
+		include modals/lost-password
+
+	block scripts
+		script(src='/vendor/jquery-2.2.3.min.js')
+		script(src='/vendor/jquery.form.min.js')
+		script(src='/vendor/bootstrap.min.js')
+		script(src='/js/views/login.js')
+		script(src='/js/controllers/loginController.js')
+		script(src='/js/form-validators/loginValidator.js')
+		script(src='/js/form-validators/emailValidator.js')
